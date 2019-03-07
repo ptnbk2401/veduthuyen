@@ -42,14 +42,14 @@ DB_PASSWORD=nguyen2401
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', '127.0.0.1'),
+            'host' => env('DB_HOST', 'sql12.freesqldatabase.com'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'id8904763_duthuyen'),
-            'username' => env('DB_USERNAME', 'id8904763_duthuyen'),
-            'password' => env('DB_PASSWORD', 'nguyen2401'),
+            'database' => env('DB_DATABASE', 'sql12282306'),
+            'username' => env('DB_USERNAME', 'sql12282306'),
+            'password' => env('DB_PASSWORD', 'sx1ilwxukq'),
             'unix_socket' => env('DB_SOCKET', ''),
-            'charset' => 'utf8mb4',
-            'collation' => 'utf8mb4_unicode_ci',
+            'charset' => 'utf8',
+            'collation' => 'utf8_unicode_ci',
             'prefix' => '',
             'strict' => true,
             'engine' => null,
@@ -62,6 +62,7 @@ DB_PASSWORD=nguyen2401
                 'NO_AUTO_CREATE_USER',
                 'NO_ENGINE_SUBSTITUTION'
             ],
+            'options'   => [PDO::ATTR_EMULATE_PREPARES => true,]
         ],
 
         'pgsql' => [
